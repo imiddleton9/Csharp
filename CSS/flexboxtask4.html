@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>Isiah Middleton</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Items in Rows</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap onto new lines */
+            justify-content: space-between; /* Add space between items in the row */
+        }
+
+        li {
+            width: 48%; /* Set the width to create two items per row with a bit of spacing */
+            margin-bottom: 10px; /* Optional: Add margin for better visualization */
+            background-color: #f0f0f0; /* Optional: Add background color for better visualization */
+            padding: 10px; /* Optional: Add padding for better visualization */
+            box-sizing: border-box; /* Include padding and border in the total width */
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Turnip</li>
+        <li>greens</li>
+        <li>yarrow</li>
+        <li>ricebean</li>
+        <li>rutabaga</li>
+        <li>endive</li>
+        <li>cauliflower</li>
+        <li>sea lettuce</li>
+        <li>kohlrabi</li>
+        <li>amaranth</li>
+    </ul>
+
+</body>
+</html>

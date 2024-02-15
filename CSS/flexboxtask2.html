@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>Isiah Middleton</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equal Columns Example</title>
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between; /* Distribute items equally */
+            padding: 0;
+        }
+
+        li {
+            flex: 1; /* Each list item takes equal space */
+            border: 1px solid #ccc; /* Optional: Add borders for better visualization */
+            padding: 10px;
+            box-sizing: border-box; /* Include padding in the total width */
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>I am small</li>
+        <li>I have more content than the very small item.</li>
+        <li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
+    </ul>
+
+</body>
+</html>
