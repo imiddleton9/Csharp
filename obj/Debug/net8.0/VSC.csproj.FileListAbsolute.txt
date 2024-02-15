@@ -1,0 +1,14 @@
+C:\Users\isiah\VSC\bin\Debug\net8.0\VSC.exe
+C:\Users\isiah\VSC\bin\Debug\net8.0\VSC.deps.json
+C:\Users\isiah\VSC\bin\Debug\net8.0\VSC.runtimeconfig.json
+C:\Users\isiah\VSC\bin\Debug\net8.0\VSC.dll
+C:\Users\isiah\VSC\bin\Debug\net8.0\VSC.pdb
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.AssemblyInfoInputs.cache
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.AssemblyInfo.cs
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.csproj.CoreCompileInputs.cache
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.dll
+C:\Users\isiah\VSC\obj\Debug\net8.0\refint\VSC.dll
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.pdb
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.genruntimeconfig.cache
+C:\Users\isiah\VSC\obj\Debug\net8.0\ref\VSC.dll

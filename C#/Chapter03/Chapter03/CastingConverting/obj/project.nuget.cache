@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4fS8M5dlr8lJvfa6tcAwweX3lQRkJp/wD2kvAFe95phvwF5kPTXu1jAq49xA+QuN/kSABQR/zF0RqxwBAnC4SA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\isiah\\VSC\\C#\\Chapter03\\Chapter03\\CastingConverting\\CastingConverting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

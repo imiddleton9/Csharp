@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cWWLR1kXIRS/fB/6qdTgCPBmEyeMhCph/sqLiI3QFC9ijKlwh0ItC8B3/tkRJvOSCzA6sCFET74yhZW7kYaQrw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\isiah\\VSC\\C#\\Chapter05\\Chapter05\\PacktLibrary9\\PacktLibrary9.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\isiah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

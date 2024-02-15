@@ -1,0 +1,14 @@
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\bin\Debug\net8.0\Arguments.exe
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\bin\Debug\net8.0\Arguments.deps.json
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\bin\Debug\net8.0\Arguments.runtimeconfig.json
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\bin\Debug\net8.0\Arguments.dll
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\bin\Debug\net8.0\Arguments.pdb
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.AssemblyInfoInputs.cache
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.AssemblyInfo.cs
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.csproj.CoreCompileInputs.cache
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.dll
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\refint\Arguments.dll
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.pdb
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.genruntimeconfig.cache
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\ref\Arguments.dll

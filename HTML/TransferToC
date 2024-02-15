@@ -1,0 +1,15 @@
+using System;
+
+class TransferToC
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter value for 'a' and press enter: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter value for 'b' and press enter: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine($"Provided integers: {a,4} and {b,4}, the total is {a + b,5}");
+    }
+}
