@@ -2,18 +2,62 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "type": "java",
+            "name": "BlockCipher",
+            "request": "launch",
+            "mainClass": "BlockCipher",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "LogicBomb",
+            "request": "launch",
+            "mainClass": "LogicBomb",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "Decrypt",
+            "request": "launch",
+            "mainClass": "Decrypt",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "Encrypt",
+            "request": "launch",
+            "mainClass": "Encrypt",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "ThreadAndProcess",
+            "request": "launch",
+            "mainClass": "ThreadAndProcess",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "PolyCircle",
+            "request": "launch",
+            "mainClass": "PolyCircle",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
+            "type": "java",
+            "name": "PolyCircle",
+            "request": "launch",
+            "mainClass": "JAVA.PolyCircle",
+            "projectName": "VSC_89f09f5e"
+        },
+        {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/bin/Debug/net8.0/VSC.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
         },

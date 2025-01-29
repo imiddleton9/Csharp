@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3498db;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#timer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+#wordLength {
+    font-size: 16px;
+    color: #2ecc71;
+}
+
+.score-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score {
+    font-size: 18px;
+    color: #3498db;
+}
+
+#guessedWords {
+    text-align: left;
+}
+
+#guessedList {
+    list-style: none;
+    padding: 0;
+}
+
+#guessedList li {
+    margin-bottom: 5px;
+    color: #2ecc71;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    
+    }}

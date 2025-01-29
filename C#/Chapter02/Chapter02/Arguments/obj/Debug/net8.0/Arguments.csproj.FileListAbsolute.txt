@@ -12,3 +12,4 @@ C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\refint\Argu
 C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.pdb
 C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.genruntimeconfig.cache
 C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\ref\Arguments.dll
+C:\Users\isiah\VSC\C#\Chapter02\Chapter02\Arguments\obj\Debug\net8.0\Arguments.sourcelink.json

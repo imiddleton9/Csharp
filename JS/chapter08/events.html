@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>On Click</title>
+        <meta charset="utf-8">
+<script>
+    window.onload = init;
+    function init(evt){
+        alert('the page is loaded')
+        function ClickMe(evt){
+            alert('myButton clicked!');
+        }
+    }
+</script>
+</head>
+<body>
+    <p>A simple page by Isiah Middleton</p>
+    <button id="myButton" onclick="ClickMe(event);">Click Me!</button>
+</body>
+</html>

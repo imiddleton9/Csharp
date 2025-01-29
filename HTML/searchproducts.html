@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Display</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .male {
+            color: blue;
+        }
+
+        .female {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <?php
+        $host = "your_database_host";
+        $username = "your_database_username";
+        $password = "your_database_password";
+        $dbname = "your_database_name";
+
+        $con = mysqli_connect($host, $username, $password, $dbname) or die("Cannot connect to DB: $dbname on $host");
+
+        $sql = "SELECT * FROM dreamhome.Staff";
+        $result = mysqli_query($con, $sql);
+
+        if ($result) {
+            if (mysqli_num_rows($result) > 0) {
+                echo "<table>";
+                echo "<tr><th>Staff ID</th><th>First Name</th><th>Last Name</th><th>Gender</th><th>DOB</th><th>Position</th></tr>";
+
+                while ($row = mysqli_fetch_array($result)) {
+                    $staffID = $row['staff_id'];
+                    $firstName = $row['first_name'];
+                    $lastName = $row['last_name'];
+                    $gender = $row['gender'];
+                    $dob = $row['DOB'];
+                    $position = $row['position'];
+
+                    $genderClass = ($gender == 'M') ? 'male' : 'female';
+
+                    echo "<tr>";
+                    echo "<td>$staffID</td><td>$firstName</td><td>$lastName</td><td class=\"$genderClass\">$gender</td><td>$dob</td><td>$position</td>";
+                    echo "</tr>";
+                }
+
+                echo "</table>";
+            } else {
+                echo "<p>No records found.</p>";
+            }
+            mysqli_free_result($result);
+        } else {
+            echo "<p>Something wrong with the database or SQL query.</p>";
+            echo "<p>Error message: " . mysqli_error($con) . "</p>";
+        }
+
+        mysqli_close($con);
+    ?>
+
+</body>
+</html>

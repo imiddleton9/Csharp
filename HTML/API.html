@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bored API Explorer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Bored API Explorer</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Display the results here -->
+        <div id="results"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    async function displayActivity(url, questionName) {
+      try {
+        const response = await axios.get(url);
+        const activity = response.data.activity;
+        const resultsContainer = document.getElementById('results');
+        const resultElement = document.createElement('div');
+        resultElement.innerHTML = `<strong>${questionName}:</strong> ${activity}`;
+        resultsContainer.appendChild(resultElement);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    // Question 1: Display on Console a Random Activity
+    displayActivity('https://www.boredapi.com/api/activity', 'Random Activity');
+
+    // Question 2: Find a Recreational Activity and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?type=recreational', 'Recreational Activity');
+
+    // Question 3: Find an Activity for 3 Participants and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?participants=3', 'Activity for 3 Participants');
+
+    // Question 4: Find a Free Activity and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?price=0', 'Free Activity');
+
+    // Question 5: Find an Activity with Low Accessibility and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?accessibility=0.1', 'Low Accessibility Activity');
+
+    // Question 6: Find Activity by Key and display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?key=103', 'Activity by Key (103)');
+
+    // Question 7: Find a Cooking Activity and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?type=cooking', 'Cooking Activity');
+
+    // Question 8: Find a Social Activity that is Free and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?type=social&price=0', 'Free Social Activity');
+
+    // Question 9: Find an Activity Between $0 and $10 (assuming 1.0 represents $100) and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?minprice=0&maxprice=0.1', 'Activity Between $0 and $10');
+
+    // Question 10: Find a Highly Accessible Activity and Display it on Console.
+    displayActivity('https://www.boredapi.com/api/activity?accessibility=0', 'Highly Accessible Activity');
+  </script>
+
+</body>
+</html>

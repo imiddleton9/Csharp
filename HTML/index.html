@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Rover Photos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ff9933;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        input, select, button {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        button {
+            background-color: #ff9933;
+            color: #111;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffcc66;
+        }
+
+        #photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        img {
+            margin: 10px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            border: 1px solid #ff9933;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mars Rover Photos</h1>
+    <form id="photoForm">
+        <label for="sol">Martian Sol (Day):</label>
+        <input type="number" id="sol" name="sol" required>
+        <label for="camera">Camera Type:</label>
+        <select id="camera" name="camera">
+            <option value="fhaz">FHAZ</option>
+            <option value="navcam">NAVCAM</option>
+            <!-- Add other camera options here -->
+        </select>
+        <button type="submit">Get Photos</button>
+    </form>
+    <div id="photos"></div>
+
+    <script>
+        document.getElementById('photoForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const sol = document.getElementById('sol').value;
+            const camera = document.getElementById('camera').value;
+            const photosDiv = document.getElementById('photos');
+            photosDiv.innerHTML = 'Loading...';
+
+            try {
+                const response = await fetch(`/photos?sol=${sol}&camera=${camera}`);
+                const data = await response.json();
+                photosDiv.innerHTML = '';
+                data.photos.forEach(photo => {
+                    const img = document.createElement('img');
+                    img.src = photo.img_src;
+                    img.alt = 'Mars Rover Photo';
+                    img.style.width = '200px';
+                    photosDiv.appendChild(img);
+                });
+            } catch (error) {
+                console.error('Error fetching photos:', error);
+                photosDiv.innerHTML = 'Failed to load photos.';
+            }
+        });
+    </script>
+</body>
+</html>

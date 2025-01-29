@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEEB; /* Sky Blue Background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #4B0082; /* Indigo */
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #8A2BE2; /* Blue Violet */
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card .back img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .front,
+.card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card .front {
+    background-color: #8A2BE2; /* Blue Violet */
+}
+
+.card .back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+    transform: rotateY(360deg);
+}
+
+.restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A2BE2; /* Blue Violet */
+    color: #fff;
+    cursor: pointer;
+}
+
+.restart:hover {
+    background-color: #483D8B; /* Dark Slate Blue */
+}
+
+.timer {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #8A2BE2; /* Blue Violet */
+}
+
+#victory {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#victory img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#victory p {
+    font-size: 1.2em;
+    color: #8A2BE2; /* Blue Violet */
+}
+
+.hidden {
+    display: none;
+}

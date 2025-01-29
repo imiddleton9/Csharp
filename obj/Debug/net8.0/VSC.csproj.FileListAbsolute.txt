@@ -12,3 +12,9 @@ C:\Users\isiah\VSC\obj\Debug\net8.0\refint\VSC.dll
 C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.pdb
 C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.genruntimeconfig.cache
 C:\Users\isiah\VSC\obj\Debug\net8.0\ref\VSC.dll
+C:\Users\isiah\VSC\obj\Debug\net8.0\WorkingWithTimers.TimerForm.resources
+C:\Users\isiah\VSC\obj\Debug\net8.0\WinFormsInvoke.Form1.resources
+C:\Users\isiah\VSC\obj\Debug\net8.0\WinFormsParallelLoopApp.ParallelLoopForm.resources
+C:\Users\isiah\VSC\obj\Debug\net8.0\FdaNdcDrugLookup.Form1.resources
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.csproj.GenerateResource.cache
+C:\Users\isiah\VSC\obj\Debug\net8.0\VSC.sourcelink.json

@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "AsclKapJ0KpIQfOhcQUaG/ah5MQmqUP+Zwg7DF5kJOY=",
+  "Source": "CMS",
+  "BasePath": "_content/CMS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CMS\\wwwroot",
+      "Source": "CMS",
+      "ContentRoot": "C:\\Users\\isiah\\VSC\\C#\\CMS\\wwwroot\\",
+      "BasePath": "_content/CMS",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\isiah\\VSC\\C#\\CMS\\wwwroot\\assets\\css\\style.min.css",
+      "SourceId": "CMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\isiah\\VSC\\C#\\CMS\\wwwroot\\",
+      "BasePath": "_content/CMS",
+      "RelativePath": "assets/css/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\style.min.css"
+    }
+  ]
+}

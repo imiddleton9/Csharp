@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game - Edition</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #feedback {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        #remainingGuesses {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Number Guessing Game - Isiah Middleton Edition</h2>
+    <p>Guess a number within the specified range</p>
+    <label for="minRange">Min Range:</label>
+    <input type="number" id="minRange" placeholder="Min Range" min="1">
+    <label for="maxRange">Max Range:</label>
+    <input type="number" id="maxRange" placeholder="Max Range" min="1">
+    <br>
+    <label for="guessInput">Enter your guess:</label>
+    <input type="number" id="guessInput" placeholder="Your guess" min="1">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="feedback"></p>
+    <p id="remainingGuesses">Remaining Guesses: 10</p>
+
+    <script>
+        let minRange = 1;
+        let maxRange = 100;
+        let guessLimit = 10;
+        let secretNumber = generateRandomNumber(minRange, maxRange);
+        const feedbackElement = document.getElementById('feedback');
+        const remainingGuessesElement = document.getElementById('remainingGuesses');
+
+        function generateRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+            if (isNaN(userGuess) || userGuess < minRange || userGuess > maxRange) {
+                feedbackElement.textContent = `Please enter a valid number between ${minRange} and ${maxRange}.`;
+            } else {
+                guessLimit--;
+                remainingGuessesElement.textContent = `Remaining Guesses: ${guessLimit}`;
+
+                if (userGuess > secretNumber) {
+                    feedbackElement.textContent = 'Too high! Try again.';
+                } else if (userGuess < secretNumber) {
+                    feedbackElement.textContent = 'Too low! Try again.';
+                } else {
+                    feedbackElement.textContent = `Correct! Well done. It took you ${10 - guessLimit} guesses.`;
+                    resetGame();
+                }
+
+                if (guessLimit === 0) {
+                    feedbackElement.textContent = `Sorry, you've reached the maximum number of guesses. The correct number was ${secretNumber}.`;
+                    resetGame();
+                }
+            }
+        }
+
+        function resetGame() {
+            secretNumber = generateRandomNumber(minRange, maxRange);
+            guessLimit = 10;
+            remainingGuessesElement.textContent = 'Remaining Guesses: 10';
+            document.getElementById('minRange').value = minRange;
+            document.getElementById('maxRange').value = maxRange;
+            document.getElementById('guessInput').value = '';
+        }
+
+        document.getElementById('minRange').addEventListener('input', function() {
+            minRange = parseInt(this.value) || 1;
+            resetGame();
+        });
+
+        document.getElementById('maxRange').addEventListener('input', function() {
+            maxRange = parseInt(this.value) || 100;
+            resetGame();
+        });
+    </script>
+</body>
+</html>

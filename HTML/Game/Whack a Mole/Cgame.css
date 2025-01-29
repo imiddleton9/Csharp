@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+
+#game-board {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.mole {
+    background-color: #ad7033;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 24px;
+}
